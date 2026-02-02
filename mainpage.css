@@ -1,0 +1,151 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #000000; /* Dark Mode like your screenshot */
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+        color: white;
+        padding-bottom: 60px;
+      }
+
+      /* Top Navigation */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+        position: sticky;
+        top: 0;
+        background: black;
+        z-index: 100;
+      }
+
+      .logo {
+        width: 110px;
+        filter: invert(1);
+      }
+      .nav-icons img {
+        width: 24px;
+        margin-left: 20px;
+        filter: invert(1);
+      }
+
+      /* Stories Section */
+      .stories {
+        display: flex;
+        padding: 10px;
+        overflow-x: auto;
+        border-bottom: 0.5px solid #262626;
+      }
+
+      .story {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 15px;
+        min-width: 75px;
+      }
+
+      .story-circle {
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        padding: 3px;
+        background: linear-gradient(
+          45deg,
+          #f09433,
+          #e6683c,
+          #dc2743,
+          #cc2366,
+          #bc1888
+        );
+        margin-bottom: 5px;
+      }
+
+      .story-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 2px solid black;
+        object-fit: cover;
+      }
+
+      .story p {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      /* Post Section */
+      .post {
+        margin-top: 10px;
+      }
+
+      .post-header {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        justify-content: space-between;
+      }
+
+      .user-info {
+        display: flex;
+        align-items: center;
+      }
+      .user-pic {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+      .user-name {
+        font-size: 13px;
+        font-weight: 600;
+      }
+
+      .post-content img {
+        width: 100%;
+        height: auto;
+      }
+
+      .post-footer {
+        padding: 12px;
+      }
+      .post-text {
+        font-size: 14px;
+        line-height: 1.4;
+        margin-top: 5px;
+      }
+      .post-text b {
+        margin-right: 5px;
+      }
+
+      /* Bottom Nav */
+      .bottom-nav {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: black;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        border-top: 0.5px solid #262626;
+      }
+      .bottom-nav img {
+        width: 24px;
+        filter: invert(1);
+      }
+      /* Hide scrollbar for Chrome, Safari and Opera */
+.stories::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.stories {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
